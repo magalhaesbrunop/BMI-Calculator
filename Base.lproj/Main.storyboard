@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5y-RL-iwQ">
+                                <rect key="frame" x="20" y="196" width="124" height="24"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                <color key="textColor" red="0.72941176470588232" green="0.86274509803921573" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLw-Qe-dVn">
+                                <rect key="frame" x="164" y="225" width="13" height="30"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                <color key="textColor" red="0.72941176470588232" green="0.86274509803921573" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDj-wH-kSA">
+                                <rect key="frame" x="20" y="265" width="124" height="24"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                <color key="textColor" red="0.72941176470588232" green="0.86274509803921573" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex: 50" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YZs-sQ-HIQ">
+                                <rect key="frame" x="16" y="225" width="132" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex: 1.70" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KOH-YJ-Op5">
+                                <rect key="frame" x="16" y="294" width="132" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="132" id="w2p-hM-cWb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="m" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jc4-No-YDC">
+                                <rect key="frame" x="167" y="297" width="10" height="24"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                <color key="textColor" red="0.72941176470588232" green="0.86274509803921573" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piQ-hM-i4W" customClass="LOTAnimationView">
+                                <rect key="frame" x="42.5" y="74" width="290" height="72"/>
+                                <color key="backgroundColor" red="0.29411764705882354" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="BLl-OA-YmX"/>
+                                    <constraint firstAttribute="width" constant="290" id="Ugz-B3-2P1"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cFO-gE-NNA">
+                                <rect key="frame" x="203" y="196" width="156" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.29408514499664307" green="0.29414036870002747" blue="0.29407787322998047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.4823529412" green="0.92941176469999998" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fub-u5-BKw">
+                                <rect key="frame" x="126" y="507" width="122" height="57"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="28"/>
+                                <state key="normal" title="Hit to calc">
+                                    <color key="titleColor" red="0.51647365093231201" green="0.5817984938621521" blue="0.32611167430877686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hjk-g4-sZf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29411764705882354" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h5y-RL-iwQ" secondAttribute="trailing" constant="231" id="0Gk-ZV-LRz"/>
+                            <constraint firstItem="cLw-Qe-dVn" firstAttribute="top" secondItem="YZs-sQ-HIQ" secondAttribute="top" id="5fF-P2-brl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jc4-No-YDC" secondAttribute="trailing" constant="198" id="8zO-uY-edg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fub-u5-BKw" secondAttribute="trailing" constant="127" id="9fm-9x-BtF"/>
+                            <constraint firstItem="cLw-Qe-dVn" firstAttribute="leading" secondItem="YZs-sQ-HIQ" secondAttribute="trailing" constant="16" id="Ckf-JF-oob"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fub-u5-BKw" secondAttribute="bottom" constant="103" id="DOr-Bk-3rq"/>
+                            <constraint firstItem="YZs-sQ-HIQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ezz-Kr-gOt"/>
+                            <constraint firstItem="fub-u5-BKw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="Gxa-dp-XrW"/>
+                            <constraint firstItem="piQ-hM-i4W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="OB7-nT-com"/>
+                            <constraint firstItem="piQ-hM-i4W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OXG-9U-uTw"/>
+                            <constraint firstItem="h5y-RL-iwQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="196" id="Oa8-TP-UNW"/>
+                            <constraint firstItem="YZs-sQ-HIQ" firstAttribute="top" secondItem="h5y-RL-iwQ" secondAttribute="bottom" constant="5" id="Pk9-mH-fvd"/>
+                            <constraint firstItem="jc4-No-YDC" firstAttribute="centerY" secondItem="KOH-YJ-Op5" secondAttribute="centerY" id="Qqh-Ej-pUu"/>
+                            <constraint firstItem="cLw-Qe-dVn" firstAttribute="leading" secondItem="YZs-sQ-HIQ" secondAttribute="trailing" constant="16" id="S6s-1v-c9P"/>
+                            <constraint firstItem="KOH-YJ-Op5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WgW-we-z3G"/>
+                            <constraint firstItem="jc4-No-YDC" firstAttribute="leading" secondItem="KOH-YJ-Op5" secondAttribute="trailing" constant="19" id="c9o-01-DZM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cLw-Qe-dVn" secondAttribute="trailing" constant="198" id="flm-Vh-usQ"/>
+                            <constraint firstItem="h5y-RL-iwQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="imd-Q3-kdg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EDj-wH-kSA" secondAttribute="trailing" constant="231" id="ltV-3N-hMP"/>
+                            <constraint firstItem="EDj-wH-kSA" firstAttribute="top" secondItem="YZs-sQ-HIQ" secondAttribute="bottom" constant="10" id="oeJ-am-nv5"/>
+                            <constraint firstItem="EDj-wH-kSA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ogh-lf-vYb"/>
+                            <constraint firstItem="jc4-No-YDC" firstAttribute="top" secondItem="cLw-Qe-dVn" secondAttribute="bottom" constant="42" id="r3Q-zb-YPz"/>
+                            <constraint firstItem="fub-u5-BKw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="487" id="sKj-FO-hh3"/>
+                            <constraint firstItem="cLw-Qe-dVn" firstAttribute="bottom" secondItem="YZs-sQ-HIQ" secondAttribute="bottom" id="xoB-Y6-8Gq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerTextView" destination="cFO-gE-NNA" id="xbl-Xk-IoU"/>
+                        <outlet property="heightTextField" destination="KOH-YJ-Op5" id="635-Ca-cD1"/>
+                        <outlet property="lotAnimationView" destination="piQ-hM-i4W" id="qpg-8U-rbF"/>
+                        <outlet property="weithTextField" destination="YZs-sQ-HIQ" id="y2G-pr-Lsm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+</document>
